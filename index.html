@@ -12,12 +12,23 @@
             // RETURNTYPE
             // SCOPE 
             // CASTEN .
+            // ELEMENT MANIPULATIE
+            // ARROW FUNCTIE
+            // 
             function startfunctie(){
                 var mijngetal = document.getElementById("getal1invoer").value;
                 console.log("werkt");
                 let mijngetalinin = parseInt(mijngetal)
 //                mijngetal = parseInt(mijngetal);
                 document.getElementById("uitvoer").innerHTML = mijngetalinin + mijngetalinin;
+
+                var element = document.getElementById("uitvoer");
+                console.log(element);
+                element.style.backgroundColor = 'red';
+            }
+            const pijltjesfunctie = (param) => {
+                console.log("hij doet het");
+                console.log(param) 
             }
         </script>
     </head>
@@ -25,5 +36,6 @@
         <input id="getal1invoer">
         <input type="button" value="klik hier" onclick="startfunctie()" />
         <div id="uitvoer"></div>
+        <input type="button" value="klik hier" onclick="pijltjesfunctie(77)" />
     </body>
 </html>
