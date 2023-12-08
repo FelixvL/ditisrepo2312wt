@@ -7,6 +7,12 @@
         <style>
 
         </style>
+        <script src="mijnscript.js"></script>
+        <script>
+            function zesde(){
+                console.log(eerste);
+            }
+        </script>
         <script>
             // PARAMETER
             // RETURNTYPE
@@ -25,6 +31,9 @@
                 let opvang = derdefunctie(7);
                 derdefunctie(24);
                 console.log(opvang);
+                vijfdefunctie();
+                zesde();
+                zevende();
             }
             function tweedefunctie(){
                 eerste++;
@@ -39,5 +48,10 @@
     </head>
     <body>
         <input type="button" value="klik hier" onclick="startfunctie()" />
+        <script>
+            function vijfdefunctie(){
+                console.log("in ander tag"+eerste);
+            }
+        </script>
     </body>
 </html>
