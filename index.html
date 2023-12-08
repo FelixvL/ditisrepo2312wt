@@ -7,51 +7,23 @@
         <style>
 
         </style>
-        <script src="mijnscript.js"></script>
-        <script>
-            function zesde(){
-                console.log(eerste);
-            }
-        </script>
         <script>
             // PARAMETER
             // RETURNTYPE
             // SCOPE 
-            var eerste; // globale variabele
+            // CASTEN
             function startfunctie(){
+                var mijngetal = document.getElementById("getal1invoer").value;
                 console.log("werkt");
-//                var eerste = 24;   // lokale variabele
-                eerste = 24;
-                eerste += 15;
-                console.log("eerste:",eerste);
-                tweedefunctie();
-                console.log("eerste:",eerste);
-                                        // argument
-                // opvang returntype
-                let opvang = derdefunctie(7);
-                derdefunctie(24);
-                console.log(opvang);
-                vijfdefunctie();
-                zesde();
-                zevende();
-            }
-            function tweedefunctie(){
-                eerste++;
-                console.log("tweede functie");
-            }
-                                // parameter
-            function derdefunctie(eengetal){
-                console.log("dit is een getal" + eengetal);
-                return "maandag";  // returntype
+                let mijngetalinin = parseInt(mijngetal)
+//                mijngetal = parseInt(mijngetal);
+                document.getElementById("uitvoer").innerHTML = mijngetalinin + mijngetalinin;
             }
         </script>
     </head>
     <body>
+        <input id="getal1invoer">
         <input type="button" value="klik hier" onclick="startfunctie()" />
-        <script>
-            function vijfdefunctie(){
-                console.log("in ander tag"+eerste);
-            }
-        </script>
+        <div id="uitvoer"></div>
     </body>
 </html>
