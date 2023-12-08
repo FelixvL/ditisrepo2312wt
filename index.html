@@ -9,13 +9,14 @@
         </style>
         <script>
             // PARAMETER
-
+            // RETURNTYPE
             function startfunctie(){
                 console.log("werkt");
                 tweedefunctie();
                             // argument
-                derdefunctie(7);
+                let opvang = derdefunctie(7);
                 derdefunctie(24);
+                console.log(opvang);
             }
             function tweedefunctie(){
                 console.log("tweede functie");
@@ -23,6 +24,7 @@
                                 // parameter
             function derdefunctie(eengetal){
                 console.log("dit is een getal" + eengetal);
+                return "maandag";
             }
         </script>
     </head>
